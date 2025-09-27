@@ -3,12 +3,56 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Tienda de otra galaxia</title>
   </head>
 
   <body>
     <!--
     La idea de este proyecto es crear una pagina de venta de productos basados en star wars, en el cual diversos usuarios, registrandose con un mail, puedan adquirir productos basados en las peliculas de star wars -->
+  <!-- HEADER -->
+<header>
+  <div class="logo">Star Wars Shop</div>
+  <nav>
+    <ul>
+      <li><a href="#">Inicio</a></li>
+      <li><a href="#">Productos</a></li>
+      <li><a href="#">Ofertas</a></li>
+      <li><a href="#">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <h1>Tienda Star Wars</h1>
+
+  <!-- Login -->
+  <div id="loginContainer">
+    <input type="email" id="email" placeholder="Correo electrónico">
+    <input type="password" id="password" placeholder="Contraseña">
+    <button onclick="login()">Iniciar Sesión</button>
+    <p id="loginError"></p>
+  </div>
+
+  <div id="welcomeMessage"></div>
+
+  <!-- Productos -->
+  <div class="products" id="productList"></div>
+</main>
+
+<!-- Carrito -->
+<div id="cart">
+  <h2>Carrito</h2>
+  <ul id="cartItems"></ul>
+  <p>Total: $<span id="cartTotal">0.00</span></p>
+</div>
+
+<footer>
+  <p>&copy; 2025 Star Wars Shop | 
+    <a href="#">Política de Privacidad</a> | 
+    <a href="#">Términos y Condiciones</a>
+  </p>
+  </script>
     <script src="./main.js"></script>
   </body>
 </html>

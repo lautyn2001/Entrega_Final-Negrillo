@@ -1,0 +1,171 @@
+body {
+  font-family: "Orbitron", sans-serif;
+  margin: 0;
+  background-color: #0b0b0b;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+header {
+  background-color: #1a1a1a;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #ffcc00;
+}
+header .logo {
+  font-size: 1.8rem;
+  color: #ffcc00;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav ul li a:hover {
+  color: #ffcc00;
+}
+main {
+  flex: 1;
+  padding: 2rem;
+}
+h1 {
+  text-align: center;
+  color: #ffcc00;
+  margin-bottom: 2rem;
+}
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+.product-card {
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s, border-color 0.3s;
+}
+.product-card:hover {
+  transform: scale(1.05);
+  border-color: #ffcc00;
+}
+.product-info {
+  padding: 1rem;
+}
+.product-info h3 {
+  color: #ffcc00;
+  margin-bottom: 0.5rem;
+}
+.product-info .price {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.product-info input {
+  width: 60px;
+  margin-bottom: 0.5rem;
+}
+.product-info button {
+  padding: 0.5rem;
+  border: none;
+  background-color: #ffcc00;
+  color: #000;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.product-info button:hover {
+  background-color: #e6b800;
+}
+footer {
+  background-color: #1a1a1a;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  border-top: 2px solid #ffcc00;
+  margin-top: auto;
+}
+footer a {
+  color: #ffcc00;
+  text-decoration: none;
+  margin: 0 1rem;
+}
+
+/* Carrito */
+#cart {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background-color: #1a1a1a;
+  border: 1px solid #ffcc00;
+  padding: 1rem;
+  border-radius: 8px;
+  width: 300px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+#cart h2 {
+  text-align: center;
+  color: #ffcc00;
+  margin-bottom: 1rem;
+}
+#cart ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#cart ul li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+#cart ul li span {
+  flex: 1;
+}
+
+/* Login */
+#loginContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+#loginContainer input {
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border-radius: 5px;
+  border: none;
+  width: 200px;
+}
+#loginContainer button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #ffcc00;
+  color: #000;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+}
+#loginContainer button:hover {
+  background-color: #e6b800;
+}
+#welcomeMessage {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  color: #ffcc00;
+}
+#loginError {
+  color: red;
+  margin-top: 0.5rem;
+  display: none;
+}
