@@ -1,24 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Tienda de otra galaxia</title>
-  </head>
 
-  <body>
-    <!--
-    La idea de este proyecto es crear una pagina de venta de productos basados en star wars, en el cual diversos usuarios, registrandose con un mail, puedan adquirir productos basados en las peliculas de star wars -->
-  <!-- HEADER -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Tienda de otra galaxia</title>
+</head>
+
 <header>
   <div class="logo">Star Wars Shop</div>
   <nav>
     <ul>
-      <li><a href="#">Inicio</a></li>
-      <li><a href="#">Productos</a></li>
-      <li><a href="#">Ofertas</a></li>
-      <li><a href="#">Contacto</a></li>
+      <li><a>Inicio</a></li>
+      <li><a>Productos</a></li>
+      <li><a>Ofertas</a></li>
+      <li><a>Contacto</a></li>
     </ul>
   </nav>
 </header>
@@ -45,14 +42,18 @@
   <h2>Carrito</h2>
   <ul id="cartItems"></ul>
   <p>Total: $<span id="cartTotal">0.00</span></p>
+  <button id="checkoutBtn" onclick="finalizarCompra()">Finalizar compra</button>
+  <p id="checkoutMessage"></p>
 </div>
 
 <footer>
-  <p>&copy; 2025 Star Wars Shop | 
-    <a href="#">Política de Privacidad</a> | 
-    <a href="#">Términos y Condiciones</a>
+  <p>&copy; 2025 Star Wars Shop |
+    <a>Política de Privacidad</a> |
+    <a>Términos y Condiciones</a>
   </p>
-  </script>
-    <script src="./main.js"></script>
-  </body>
+</footer>
+</script>
+<script src="./main.js"></script>
+</body>
+
 </html>
