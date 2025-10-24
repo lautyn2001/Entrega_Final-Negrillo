@@ -1,59 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tienda de otra galaxia</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Tienda de otra galaxia</title>
-</head>
+  <body>
+    <header>
+      <div class="logo">Star Wars Shop</div>
+      <nav>
+        <ul>
+          <li><a href="index.html" id="linkInicio">Inicio</a></li>
+          <li><a href="#" id="linkProductos">Productos</a></li>
+          <li><a href="./pages/ofertas.html" id="linkOfertas">Ofertas</a></li>
+          <li>
+            <a href="./pages/contacto.html" id="linkContacto">Contacto</a>
+          </li>
+          <li><a href="" id="linkCarrito">🛒 Carrito</a></li>
+        </ul>
+      </nav>
+    </header>
 
-<header>
-  <div class="logo">Star Wars Shop</div>
-  <nav>
-    <ul>
-      <li><a>Inicio</a></li>
-      <li><a>Productos</a></li>
-      <li><a>Ofertas</a></li>
-      <li><a>Contacto</a></li>
-    </ul>
-  </nav>
-</header>
+    <main>
+      <h1>Tienda Star Wars</h1>
 
-<main>
-  <h1>Tienda Star Wars</h1>
+      <!-- Login -->
+      <div id="loginContainer">
+        <input type="email" id="email" placeholder="Correo electrónico" />
+        <input type="password" id="password" placeholder="Contraseña" />
+        <button id="loginButton">Iniciar Sesión</button>
+        <p id="loginError"></p>
+      </div>
 
-  <!-- Login -->
-  <div id="loginContainer">
-    <input type="email" id="email" placeholder="Correo electrónico">
-    <input type="password" id="password" placeholder="Contraseña">
-    <button onclick="login()">Iniciar Sesión</button>
-    <p id="loginError"></p>
-  </div>
+      <div id="welcomeMessage"></div>
 
-  <div id="welcomeMessage"></div>
+      <!-- Productos -->
+      <div class="products" id="productList"></div>
+    </main>
 
-  <!-- Productos -->
-  <div class="products" id="productList"></div>
-</main>
+    <!-- Carrito (oculto al inicio) -->
+    <div id="cart" class="oculto">
+      <div class="cart-content">
+        <button id="cerrarCarrito" class="cerrar-btn">✖</button>
+        <h2>Carrito</h2>
+        <ul id="cartItems"></ul>
+        <p>Total: $<span id="cartTotal">0.00</span></p>
+        <button id="checkoutBtn">Finalizar compra</button>
+        <p id="checkoutMessage"></p>
+      </div>
+    </div>
 
-<!-- Carrito -->
-<div id="cart">
-  <h2>Carrito</h2>
-  <ul id="cartItems"></ul>
-  <p>Total: $<span id="cartTotal">0.00</span></p>
-  <button id="checkoutBtn" onclick="finalizarCompra()">Finalizar compra</button>
-  <p id="checkoutMessage"></p>
-</div>
-
-<footer>
-  <p>&copy; 2025 Star Wars Shop |
-    <a>Política de Privacidad</a> |
-    <a>Términos y Condiciones</a>
-  </p>
-</footer>
-</script>
-<script src="./main.js"></script>
-</body>
-
+    <footer>
+      <p>
+        &copy; 2025 Star Wars Shop | <a href="#">Política de Privacidad</a> |
+        <a href="#">Términos y Condiciones</a>
+      </p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="main.js"></script>
+  </body>
 </html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../ofertas.css" />
+    <title>Ofertas - Star Wars Shop</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">Star Wars Shop</div>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="../index.html">Productos</a></li>
+          <li><a href="ofertas.html">Ofertas</a></li>
+          <li><a href="../pages/contacto.html">Contacto</a></li>
+          <li><a href="#" id="linkCarrito">🛒 Carrito</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Ofertas de la Galaxia</h1>
+      <div id="ofertasContainer" class="products"></div>
+
+      <!-- Carrito -->
+      <div id="cart" class="oculto">
+        <div class="cart-content">
+          <button id="cerrarCarrito" class="cerrar-btn">✖</button>
+          <h2>Carrito</h2>
+          <ul id="cartItems"></ul>
+          <p>Total: $<span id="cartTotal">0.00</span></p>
+          <button id="checkoutBtn">Finalizar compra</button>
+          <p id="checkoutMessage"></p>
+        </div>
+      </div>
+    </main>
+
+    <!-- Carrito (oculto al inicio) -->
+    <div id="cart" class="oculto">
+      <div class="cart-content">
+        <button id="cerrarCarrito" class="cerrar-btn">✖</button>
+        <h2>Carrito</h2>
+        <ul id="cartItems"></ul>
+        <p>Total: $<span id="cartTotal">0.00</span></p>
+        <button id="checkoutBtn">Finalizar compra</button>
+        <p id="checkoutMessage"></p>
+      </div>
+    </div>
+
+    <footer>
+      <p>
+        &copy; 2025 Star Wars Shop | <a href="#">Política de Privacidad</a> |
+        <a href="#">Términos y Condiciones</a>
+      </p>
+    </footer>
+
+    <script src="../js/ofertas.js"></script>
+  </body>
+</html>

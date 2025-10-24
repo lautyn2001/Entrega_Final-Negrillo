@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Pagar Carrito - Star Wars Shop</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">Star Wars Shop</div>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="../index.html">Productos</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Formulario de Pago</h1>
+
+      <!-- Bienvenida usuario -->
+      <p id="welcomeMessagePago"></p>
+
+      <section id="resumenCarrito">
+        <h2>Resumen de tu carrito</h2>
+        <ul id="itemsCarrito"></ul>
+        <p>Total a pagar: $<span id="totalPagar">0.00</span></p>
+      </section>
+
+      <section id="formularioPago">
+        <h2>Datos de Compra</h2>
+        <form id="formPago">
+          <label for="nombre">Nombre completo:</label>
+          <input type="text" id="nombre" required />
+
+          <label for="direccion">Dirección de envío:</label>
+          <input type="text" id="direccion" required />
+
+          <label for="tarjeta">Número de tarjeta:</label>
+          <input
+            type="text"
+            id="tarjeta"
+            placeholder="XXXX-XXXX-XXXX-XXXX"
+            required
+          />
+
+          <label for="fechaExp">Fecha de expiración:</label>
+          <input type="month" id="fechaExp" required />
+
+          <label for="cvv">CVV:</label>
+          <input type="text" id="cvv" maxlength="3" required />
+
+          <button type="submit">Pagar</button>
+        </form>
+        <p id="mensajePago"></p>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        &copy; 2025 Star Wars Shop | <a href="#">Política de Privacidad</a> |
+        <a href="#">Términos y Condiciones</a>
+      </p>
+    </footer>
+
+    <!-- Scripts externos -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/pagina_de_pago.js"></script>
+  </body>
+</html>
