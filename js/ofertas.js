@@ -13,9 +13,13 @@ const linkCarrito = document.getElementById("linkCarrito");
 
 /*productos en oferta*/
 const ofertas = [
-    { producto: "Sable láser", precioOriginal: 67000, precioOferta: 54000, stock: 5, imagen: "../productos_img/sable laser.jpg" },
-    { producto: "Droide", precioOriginal: 39000, precioOferta: 30000, stock: 3, imagen: "../productos_img/droide.jpg" },
-    { producto: "Bláster", precioOriginal: 20000, precioOferta: 15000, stock: 4, imagen: "../productos_img/blaster.jpg" },
+    { producto: "Halcon Milenario", precioOriginal: 80000000, precioOferta: 54000000, stock: 2, imagen: "../productos_img/Halcon_Milenario.jpg" },
+    { producto: "Droide de Combate", precioOriginal: 700000, precioOferta: 600000, stock: 3, imagen: "../productos_img/droide-combate.jpg" },
+    { producto: "TL-50", precioOriginal: 20000, precioOferta: 15000, stock: 7, imagen: "../productos_img/tl50.jpg" },
+    { producto: "X-WING", precioOriginal: 17000000, precioOferta: 10000000, stock: 6, imagen: "../productos_img/xwing.jpg" },
+    { producto: "AT-AT Walker", precioOriginal: 990000, precioOferta: 960000, stock: 23, imagen: "../productos_img/at.jpg" },
+    { producto: "Caza TIE", precioOriginal: 45900000, precioOferta: 45600000, stock: 1, imagen: "../productos_img/cazaTIE.jpg" },
+    { producto: "Ewok salvaje", precioOriginal: 34600000, precioOferta: 30000000, stock: 9, imagen: "../productos_img/ewok.jpg" },
 ];
 
 function mostrarOfertas() {
